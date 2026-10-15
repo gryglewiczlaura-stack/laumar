@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cat Follows Mouse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Cat Follows Mouse</h1>
+    <p>Move your mouse (or touch) and the cat will follow. Use the slider to change follow speed.</p>
+    <label for="speed">Follow ease (0 = instant, 1 = very slow): <span id="speedVal">0.12</span></label>
+    <input id="speed" type="range" min="0.01" max="0.5" step="0.01" value="0.12">
+    <canvas id="game"></canvas>
+    <p class="hint">Tip: Resize the window or open on mobile and touch to control.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
